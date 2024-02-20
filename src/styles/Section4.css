@@ -1,0 +1,129 @@
+ .s4main{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 150px 20px 150px;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    overflow-x: hidden;
+ }
+
+#s4main2{
+   width: 100vw;
+   height: 140vh;
+   display: flex;
+   justify-content: center;
+   /* background-color: rgb(56, 47, 47); */
+   /* position: relative; */
+}
+#line{
+   height: 100%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   position: absolute;
+   
+}
+#s4roadmap{
+    position: absolute;
+    display: flex;
+    /* justify-content: center; */
+   height: 140%;
+   /* width: 500px; */
+   width: 100vw;
+   background: rgb(0, 0, 0);
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0.006127450980392135) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+overflow: hidden;
+}
+#rodCard-main{
+   height: 100%;
+   min-width: 60vmax;
+   display: flex;
+   gap: 30px;
+   flex-direction: column;
+   align-items: center;
+   position: absolute;
+   padding-top: 50px;
+   top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   /* background-color: cadetblue; */
+    
+}
+#rd-h3{
+   font-family: "Magison";
+}
+.roadCard{
+   height: fit-content;
+   width: 100%;
+   display: flex;
+   color: white;
+   /* margin-left: 150px; */
+   gap: 70px;
+   /* position: absolute; */
+   justify-content: space-between;
+   align-items: center;
+}
+.roadCard:nth-child(even)>div>p {
+   align-self: self-end; 
+   width: 70%;
+}
+.roadCard:nth-child(odd)>div>p {
+   align-self: self-end; 
+   width: 80%;
+}
+.roadCard:nth-child(even)>div {
+    display: flex;
+    flex-direction: column;
+}
+#rd-percent{
+   font-size: 50px;
+   font-weight: 600;
+color:   #4bd859  !important;
+ 
+}
+#s4bgimg{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   /* position: absolute; */
+   overflow: hidden;
+}
+ 
+#s4img1{
+   height: 100%;
+  
+}
+#s4img2{
+height: 100%;
+ 
+}
+
+
+ @media (max-width: 768px){
+   .s4main{
+      padding: 60px 10px 20px 10px;
+      gap: 5px;
+   }
+      #s4img2 {
+         display: none;
+   
+      }
+   
+ }
+ @media (max-width: 845px){
+#s4main2 {
+      
+      height: 160vh;
+   
+ }
+ #s4roadmap {
+   
+    height: 160%;
+   
+   }
+}
